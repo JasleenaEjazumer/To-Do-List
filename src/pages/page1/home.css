@@ -1,0 +1,28 @@
+/* Apply these styles to the existing class for your banner wrapper */
+.banner-wrapper {
+    /* Add these styles */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center */
+    align-items: center; /* Horizontally center */
+    height: 100vh; /* Set the height to 100% of the viewport height */
+    text-align: center;
+  }
+  .homeParentDiv {
+    padding-top: 100px; /* Adjust as needed */
+  }
+  .get-started-button {
+    background-color: #e00e0e;
+    color: #fff;
+    padding: 10px 50px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .get-started-button:hover {
+    background-color: #29b96a;
+  }
+  

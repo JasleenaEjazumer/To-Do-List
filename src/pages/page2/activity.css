@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Add this to ensure consistent box sizing */
+  }
+  
+  body {
+    background-color: #0d8294;
+  }
+  
+  .app {
+    display: flex; /* Use flex display to center content */
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center content horizontally */
+    padding: 20px; /* Add padding for spacing */
+  }
+  
+  .app .mainHeading h1 {
+    text-align: center;
+  }
+  
+  .app h1,
+  h2 {
+    color: white;
+  }
+  
+  .app .input {
+    margin-top: 0.8em;
+    width: 100%; /* Use full width */
+    max-width: 20em; /* Add max-width for responsiveness */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 6px;
+    padding: 5px;
+    background-color: white;
+  }
+  
+  .app .input input {
+    width: 100%;
+    height: 1.6em;
+    border-color: transparent;
+    outline-color: transparent;
+  }
+  
+  .app i {
+    cursor: pointer;
+    font-size: larger;
+    font-weight: 900;
+    color: grey;
+    margin-right: 5px;
+  }
+  
+  .app .todos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1em; /* Add margin for spacing */
+  }
+  
+  .app .todos .todo {
+    width: 100%; /* Use full width */
+    max-width: 20em; /* Add max-width for responsiveness */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 6px;
+    padding: 5px;
+    background-color: white;
+    margin-top: 0.8em;
+  }
+  
+  .app .todos .todo .left p {
+    margin-left: 3px;
+    font-size: medium;
+    font-weight: 700;
+    font-style: normal;
+    color: grey;
+  }
+  .activityContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; /* Adjust this as needed */
+  }
+  
+  

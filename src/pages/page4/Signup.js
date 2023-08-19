@@ -22,7 +22,7 @@ export default function Signup() {
       });
 
       if (response.status === 200) {
-        navigate('/login');
+        navigate('/3');
       } else {
         console.log('Registration failed:', response.data.error);
       }

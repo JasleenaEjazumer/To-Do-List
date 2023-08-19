@@ -5,7 +5,7 @@ import Logo from '../../logo.png';
 import './Login.css';
 import axios from 'axios'; // Import Axios
 
-function Login() {
+function Login(props) {
   const navigate = useNavigate(); // Use useNavigate for navigation
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
@@ -14,10 +14,11 @@ function Login() {
     e.preventDefault();
 
     try {
-      const response = await axios.post('/api/login', { email, password }); 
+      const response = await axios.post('http://localhost:3001/api/users/login', { email, password }); 
       if (response.status === 200) {
+        props.onLogin(response.data.username); // Call onLogin with the username
+        navigate('/');
         
-        navigate('/dashboard');
       } else {
        
       }

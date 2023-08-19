@@ -8,6 +8,13 @@
     height: 100vh; /* Set the height to 100% of the viewport height */
     text-align: center;
   }
+  .banner-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Vertically center */
+    align-items: center; /* Horizontally center */
+    padding-bottom: 90px; /* Add some top padding to move h1 and p1 slightly higher */
+  }
   .homeParentDiv {
     padding-top: 100px; /* Adjust as needed */
   }
